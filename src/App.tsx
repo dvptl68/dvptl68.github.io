@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Under construction...
+          Under construction, check back later...
         </p>
       </header>
     </div>
