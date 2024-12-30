@@ -18,10 +18,12 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <main>
-          <Header />
-          {children}
-          <Footer />
+        <main className='dark'>
+          <div className='min-h-screen bg-background-light dark:bg-background-dark text-txt-light dark:text-txt-dark'>
+            <Header />
+            {children}
+            <Footer />
+          </div>
         </main>
       </body>
     </html>
