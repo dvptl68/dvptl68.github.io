@@ -19,10 +19,16 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <main className='dark'>
-          <div className='min-h-screen bg-background-light dark:bg-background-dark text-txt-light dark:text-txt-dark'>
-            <Header />
-            {children}
-            <Footer />
+          <div className='flex flex-col min-h-screen justify-between bg-background-light dark:bg-background-dark text-txt-light dark:text-txt-dark'>
+            <div className=''>
+              <Header />
+            </div>
+            <div className='flex-grow'>
+              {children}
+            </div>
+            <div className=''>
+              <Footer />
+            </div>
           </div>
         </main>
       </body>
